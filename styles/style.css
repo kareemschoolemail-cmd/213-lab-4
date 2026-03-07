@@ -1,0 +1,71 @@
+.flex_item_1 {
+  display: flex;
+  flex: 1;
+  background-color: grey;
+  padding: 12px;
+  width: 20vw;
+  height: 50px;
+}
+.flex_item_2 {
+  display: flex;
+  flex: 1;
+  background-color: grey;
+  border: 2px solid black;
+  padding: 12px;
+  width: 20vw;
+  height: 50px;
+}
+/*uitility class thing that acts as a form of secondary changes to the properties of elements that already have a class*/
+.grow_2 {
+  /*was going to use flex(now I am) grow but it's not double the size when the page is scaled down*/
+  flex: 2;
+}
+/*can't seem to get the last container's elements to wrap, seems I followed a very similar layout as yours but it's hard to see the
+entire css code in your presentation so I can't really tell*/
+.wrap_box {
+  flex-wrap: wrap;
+}
+
+
+
+.flex_container_1 {
+  background-color: red;
+  width: 40vw;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+  gap: 10px;
+}
+.flex_container_2 {
+  background-color: red;
+  width: 40vw;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 15px;
+  gap: 15px;
+}
+.flex_container_3 {
+  background-color: red;
+  width: 40vw;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 12px;
+  gap: 12px;
+}
+.flex_container_4 {
+  background-color: red;
+  width: 40vw;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 12px;
+  gap: 12px;
+}
+

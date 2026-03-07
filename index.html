@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Flexbox Lab</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Flexbox Lab</h1>
+            <p>All boxes have a height 50px.</p>
+            <p>You may select any colour you like for the boxes and their borders.</p>
+        </header>
+        <main>
+            <section>
+                <div>
+                    <h2>Two equally sized columns</h2>
+                    <p>The space between the columns, and between the columns and the outer box, is 10px.</p>
+                </div>
+                <div class="flex_container_1">
+                    <div class="flex_item_1"></div>
+                    <div class="flex_item_1"></div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Three equally sized columns</h2>
+                    <p>The space between the columns, and between the columns and the outer box, is 15px.</p>
+                </div>
+                <div class="flex_container_2">
+                    <div class="flex_item_1"></div>
+                    <div class="flex_item_1"></div>
+                    <div class="flex_item_1"></div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <h2>Three unequal columns</h2>
+                    <p>The first column is exactly double the width of the other two.<br>
+                    The space between columns, and between the columns and the outer box, is 12px.<br>
+                    Each inner box has a 2px border.
+                    </p>
+                </div>
+                <div class="flex_container_3">
+                    <div class="flex_item_2 grow_2"></div>
+                    <div class="flex_item_2"></div>
+                    <div class="flex_item_2"></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <div>
+                    <h2>Four equally sized columns and a footer</h2>
+                    <p>The space between columns, and between the columns and the outer box, is 12px.<br>
+                    Each inner box has a 2px border.
+                    </p>
+                </div>
+                <div class="flex_container_4">
+                    <div class="flex_item_2"></div>
+                    <div class="flex_item_2"></div>
+                    <div class="flex_item_2"></div>
+                    <div class="flex_item_2"></div>
+                    <div class="flex_item_2 wrap_box"></div>
+                </div>
+            </section>
+        </footer>
+    </body>
+
+</html>
