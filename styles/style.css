@@ -1,71 +1,134 @@
-.flex_item_1 {
-  display: flex;
-  flex: 1;
-  background-color: grey;
-  padding: 12px;
-  width: 20vw;
-  height: 50px;
+/*Type selector for html general layout*/
+html, body {
+    background-color: rgb(240, 255, 240);
 }
-.flex_item_2 {
-  display: flex;
-  flex: 1;
-  background-color: grey;
-  border: 2px solid black;
-  padding: 12px;
-  width: 20vw;
-  height: 50px;
+h2 {
+    font-weight: 800;
 }
-/*uitility class thing that acts as a form of secondary changes to the properties of elements that already have a class*/
-.grow_2 {
-  /*was going to use flex(now I am) grow but it's not double the size when the page is scaled down*/
-  flex: 2;
-}
-/*can't seem to get the last container's elements to wrap, seems I followed a very similar layout as yours but it's hard to see the
-entire css code in your presentation so I can't really tell*/
-.wrap_box {
-  flex-wrap: wrap;
+footer {
+    color: rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
-
+/*Flex box classes*/
+.page_logo_name_1 {
+    color: limegreen;
+    display: flex;
+    width: fit-content;
+    height: 100px;
+}
+.page_nav_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+    border: 2px solid black;
+    width: 12rem;
+    height: 3rem;
+}
+.page_logo_name_1 h1 {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bold;
+}
+.page_nav_button p {
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: bold;
+}
+.page_logo_image_1 {
+    display: flex;
+    padding: 15px;
+    width: 15vw;
+    height: 15vw;
+}
 
 .flex_container_1 {
-  background-color: red;
-  width: 40vw;
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 10px;
-  gap: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 10px;
 }
 .flex_container_2 {
-  background-color: red;
-  width: 40vw;
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 15px;
-  gap: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 10px;
 }
-.flex_container_3 {
-  background-color: red;
-  width: 40vw;
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 12px;
-  gap: 12px;
+.flex_container_2 a {
+    text-decoration: none;
 }
-.flex_container_4 {
-  background-color: red;
-  width: 40vw;
-  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 12px;
-  gap: 12px;
+.flex_container_input {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: row;
+    padding: 0.1rem;
+    gap: 10px;
+}
+.flex_input_row {
+    display: flex;
+
+    width: 25rem;
+    height: 25rem;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    align-content: flex-start;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.flex_label_row {
+    display: flex;
+
+    width: 5rem;
+    height: 25rem;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    align-content: flex-start;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.input_box {
+    display: flex;
+    padding: 0.5rem;
+    width: 25vw;
+    height: 3vw;
+}
+.input_box input {
+    text-align: start;
+    vertical-align: top;
+}
+.input_label {
+    display: flex;
+    padding: 0.5rem;
+    width: 5vw;
+    height: 3vw;
+}
+.submit_button button {
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    width: 10rem;
+    height: 2.5rem;
 }
 
+/*Utility classes*/
+.util_page_selected_color {
+    background-color: #e6f0ff;
+    border: 2px solid rgba(0, 0, 255, 0.1);
+}
+.util_page_selected_color p {
+    color: rgba(0, 0, 255, 0.75);
+    opacity: 0.5;
+}
+.util_extend_message_label {
+    width: 35vw;
+    height: 10vw;
+}

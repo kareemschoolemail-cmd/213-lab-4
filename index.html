@@ -1,72 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <title>Flexbox Lab</title>
-        <link rel="stylesheet" href="styles/style.css">
-    </head>
-
-    <body>
-        <header>
-            <h1>Flexbox Lab</h1>
-            <p>All boxes have a height 50px.</p>
-            <p>You may select any colour you like for the boxes and their borders.</p>
-        </header>
-        <main>
-            <section>
-                <div>
-                    <h2>Two equally sized columns</h2>
-                    <p>The space between the columns, and between the columns and the outer box, is 10px.</p>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+      <header>
+          <div>
+              <p>Home page</p>
+          </div>
+          <hr>
+          <div class="flex_container_1">
+              <div class="page_logo_image_1">
+                  <img src="images/Pickle-logo-thing.png" 
+                  alt="A grey cat sits within a white laundry hamper, looking up at the camera">
+              </div>
+              <div class="page_logo_name_1">
+                  <h1>Pickle thing website</h1>
+              </div>
+          </div>
+      </header>
+      <section>
+          <div>
+              <div class="flex_container_2">
+                  <a href="https://www.roblox.com">
+                      <div class="page_nav_button">
+                          <p class="util_highlight_text">Home</p>
+                      </div>
+                  </a>
+                  <a href="https://www.roblox.com">
+                      <div class="page_nav_button util_page_selected_color">
+                          <p>Contact us</p>
+                      </div>
+                  </a>
+             </div>
+          </div>
+      </section>
+      <section>
+            <form action="input-userid" class="flex_container_input">
+                <div class="flex_label_row">
+                    <div class="input_label">
+                        <label for="name">Name:</label>
+                    </div>
+                    <div class="input_label">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="input_label">
+                        <label for="message">Message:</label>
+                    </div>
                 </div>
-                <div class="flex_container_1">
-                    <div class="flex_item_1"></div>
-                    <div class="flex_item_1"></div>
+                <div class="flex_input_row">
+                    <div class="input_box">
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input_box">
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div class="input_box util_extend_message_label">
+                        <input type="text" id="message" name="message" required>
+                    </div>
+                    <div class="submit_button">
+                        <button type="submit">Submit</button>
+                    </div>
                 </div>
-            </section>
-            <section>
-                <div>
-                    <h2>Three equally sized columns</h2>
-                    <p>The space between the columns, and between the columns and the outer box, is 15px.</p>
-                </div>
-                <div class="flex_container_2">
-                    <div class="flex_item_1"></div>
-                    <div class="flex_item_1"></div>
-                    <div class="flex_item_1"></div>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <h2>Three unequal columns</h2>
-                    <p>The first column is exactly double the width of the other two.<br>
-                    The space between columns, and between the columns and the outer box, is 12px.<br>
-                    Each inner box has a 2px border.
-                    </p>
-                </div>
-                <div class="flex_container_3">
-                    <div class="flex_item_2 grow_2"></div>
-                    <div class="flex_item_2"></div>
-                    <div class="flex_item_2"></div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <section>
-                <div>
-                    <h2>Four equally sized columns and a footer</h2>
-                    <p>The space between columns, and between the columns and the outer box, is 12px.<br>
-                    Each inner box has a 2px border.
-                    </p>
-                </div>
-                <div class="flex_container_4">
-                    <div class="flex_item_2"></div>
-                    <div class="flex_item_2"></div>
-                    <div class="flex_item_2"></div>
-                    <div class="flex_item_2"></div>
-                    <div class="flex_item_2 wrap_box"></div>
-                </div>
-            </section>
-        </footer>
-    </body>
-
+            </form>
+      </section>
+      <script src="script.js"></script>
+  </body>
+  <footer>
+    <p>Created by XYZ<br>
+    Follow us on [social media]
+    </p>
+  </footer>
 </html>
